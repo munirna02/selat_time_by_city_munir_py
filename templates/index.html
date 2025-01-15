@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslim Prayer Times</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Muslim Prayer Times</h1>
+
+        <!-- City Input Form -->
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button onclick="fetchPrayerTimes()">Get Prayer Times</button>
+
+        <!-- Prayer Times Display -->
+        <div id="prayer-times" class="prayer-times">
+            <p>Enter a city and click "Get Prayer Times".</p>
+        </div>
+
+        <!-- Error Message (if any) -->
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script src="static/scripts.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/static/service-worker.js')
+                .then(function (registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(function (error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+
+</body>
+
+</html>

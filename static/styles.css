@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #444;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    /* Gradient background */
+}
+
+/* Container Box */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Prayer Times Section */
+.prayer-times {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.prayer-times h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.prayer-times ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.prayer-times li {
+    padding: 10px;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.prayer-times li:hover {
+    background-color: #e1f5e1;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
