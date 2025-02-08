@@ -2,3 +2,6 @@
 .venv
 note
 __pycache__
+*.env
+.venv/
+*.env
