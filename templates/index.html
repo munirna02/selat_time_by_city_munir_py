@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muslim Prayer Times</title>
+    <title>Muslim Prayer Time</title>
+    <!-- Favicon links for different devices -->
+    <link rel="icon" href="/static/icons/icon-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="/static/icons/icon-512x512.png" sizes="512x512" type="image/png">
+    <!-- Optional: Apple touch icon (for iOS devices) -->
+    <link rel="apple-touch-icon" href="/static/icons/icon-512x512.png">
+    <!-- Other meta tags and stylesheets -->
     <link rel="stylesheet" href="static/styles.css">
     <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
 </head>
 
 <body>
     <div class="container">
-        <h1>Muslim Prayer Times</h1>
+        <h1>Muslim Prayer Time</h1>
 
         <!-- City Input Form -->
         <input type="text" id="city" placeholder="Enter city name" />
