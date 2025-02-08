@@ -80,3 +80,8 @@ def get_prayer_times():
 
 # if __name__ == "__main__":
 #     app.run(debug=True)
+if __name__ == "__main__":
+    # Get the port from the environment variable provided by Render
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if not set
+    # Make Flask listen on all interfaces and the correct port
+    app.run(host="0.0.0.0", port=port)
